@@ -53,7 +53,7 @@ header #logo h1 .pink {
 }
 
 header nav ul {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 header nav ul .d-flex {
@@ -96,87 +96,46 @@ header nav a.active {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-#cover .transparent-bg .text-2 {
+#cover .transparent-bg #cover-text {
   margin-top: 30px;
-  font-size: 22px;
 }
 
-#cover .transparent-bg .text-2 h1, #cover .transparent-bg .text-2 h2 {
+#cover .transparent-bg #cover-text h2 {
+  font-size: 35px;
   color: #fff;
   margin-bottom: 10px;
-  letter-spacing: 2px;
 }
 
-#cover .transparent-bg .text-2 h1 .pink, #cover .transparent-bg .text-2 h2 .pink {
+#cover .transparent-bg #cover-text h3 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+#cover .transparent-bg #cover-text h3 .pink {
   color: #e93e5a;
 }
 
-#cover .transparent-bg .holder {
+#cover .transparent-bg #cover-text a {
+  display: inline-block;
+  background-color: #e93e5a;
+  color: #fff;
+  font-size: 16px;
+  padding: 7px 18px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+/*about me*/
+#about-me {
+  margin: 0px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 40px;
-}
-
-#cover .transparent-bg .holder .holder-text {
-  line-height: 80px;
-  color: #fff;
-  font-size: 30px;
-}
-
-#cover .transparent-bg .holder-typing {
-  margin-left: 10px;
-  line-height: 90px;
-  height: 90px;
-  overflow: hidden;
-}
-
-#cover .transparent-bg .holder-typing li {
-  font-size: 30px;
-  list-style-type: none;
-  color: #e93e5a;
-  font-weight: 500;
-  position: relative;
-  top: 0;
-  -webkit-animation: slide 5s steps(3) infinite;
-          animation: slide 5s steps(3) infinite;
-}
-
-@-webkit-keyframes slide {
-  100% {
-    top: -270px;
-  }
-}
-
-@keyframes slide {
-  100% {
-    top: -270px;
-  }
-}
-
-#cover .transparent-bg .holder-typing li p {
-  line-height: 90px;
-  position: relative;
-}
-
-#cover .transparent-bg .btn {
-  color: #fff;
-  background-color: #e93e5a;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  font-size: 14px;
-}
-
-/*abot me*/
-#about-me {
-  width: 100%;
-  margin: 0px auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -216,7 +175,6 @@ header nav a.active {
 
 /*education*/
 #education {
-  width: 100%;
   background-color: #e93e5a;
 }
 
@@ -238,13 +196,13 @@ header nav a.active {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  width: 100%;
 }
 
 #education .box-container .box {
   width: 25%;
-  margin: 10px;
+  height: 260px;
+  margin: 8px;
   padding-left: 4rem;
   border-left: 2px solid #fff;
   position: relative;
@@ -284,17 +242,18 @@ header nav a.active {
   background: #000;
 }
 
-/*skill*/
-.section {
+/*skills*/
+#skills {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
-.section .sectionNaslov h2 {
-  font-size: 26px;
+#skills .skill2Naslov h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
   color: #e93e5a;
   text-align: center;
-  text-transform: uppercase;
 }
 
 .skill {
@@ -308,6 +267,7 @@ header nav a.active {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .skill p {
@@ -330,28 +290,28 @@ header nav a.active {
 }
 
 .skill .progres-bar .osamdeset {
-  background: #e93e5a;
+  background-color: #e93e5a;
   width: 80%;
   height: 20px;
   border-radius: 20px;
 }
 
 .skill .progres-bar .pedeset {
-  background: #e93e5a;
+  background-color: #e93e5a;
   width: 50%;
   height: 20px;
   border-radius: 20px;
 }
 
 .skill .progres-bar .cetrdeset {
-  background: #e93e5a;
-  width: 70%;
+  background-color: #e93e5a;
+  width: 40%;
   height: 20px;
   border-radius: 20px;
 }
 
 .skill .progres-bar .devedeset {
-  background: #e93e5a;
+  background-color: #e93e5a;
   width: 90%;
   height: 20px;
   border-radius: 20px;
@@ -366,11 +326,11 @@ header nav a.active {
 }
 
 #projects h2 {
-  text-align: center;
-  color: #fff;
   margin-top: 10px;
   margin-bottom: 10px;
   text-transform: uppercase;
+  color: #e93e5a;
+  text-align: center;
 }
 
 #projects p {
@@ -378,7 +338,6 @@ header nav a.active {
 }
 
 #projects #holder {
-  width: 100%;
   margin: 30px auto 0px auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -444,15 +403,15 @@ header nav a.active {
 
 /*service*/
 .service {
-  background: #f9f9f9;
+  background-color: #f9f9f9;
 }
 
 .service h2 {
-  text-align: center;
-  color: #e93e5a;
-  text-transform: uppercase;
-  padding-top: 10px;
+  margin-top: 10px;
   margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #e93e5a;
+  text-align: center;
 }
 
 .service .box-container {
@@ -471,6 +430,8 @@ header nav a.active {
 }
 
 .service .box-container .box {
+  width: 30%;
+  height: 250px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   -webkit-box-shadow: 0.5% 1% rgba(0, 0, 0, 0.1);
@@ -488,12 +449,11 @@ header nav a.active {
 .service .box-container .box i {
   text-align: center;
   color: #e93e5a;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .service .box-container .box h3 {
   font-size: 20px;
-  color: #333;
 }
 
 .service .box-container .box p {
@@ -502,21 +462,20 @@ header nav a.active {
   padding: 30px 0px;
 }
 
-/*contact*/
 #contact {
   width: 100%;
 }
 
 #contact h2 {
-  text-align: center;
-  color: #e93e5a;
   margin-top: 10px;
   margin-bottom: 10px;
   text-transform: uppercase;
+  color: #e93e5a;
+  text-align: center;
 }
 
 #contact #contactHolder {
-  width: 80%;
+  width: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -526,12 +485,13 @@ header nav a.active {
 }
 
 #contact #contactHolder #map iframe {
-  width: 85%;
-  height: 350px;
+  width: 100%;
+  height: inherit;
 }
 
 #contact #contactHolder .mapform {
-  width: 45%;
+  width: 40%;
+  height: 400px;
   margin-bottom: 20px;
 }
 
@@ -543,11 +503,12 @@ header nav a.active {
   padding: 15px;
 }
 
-#contact #contactHolder .mapform #forma1 #ime, #contact #contactHolder .mapform #forma1 #prezime, #contact #contactHolder .mapform #forma1 #meil {
+#contact #contactHolder .mapform #forma1 #ime, #contact #contactHolder .mapform #forma1 #prezime, #contact #contactHolder .mapform #forma1 #meil, #contact #contactHolder .mapform #forma1 textarea {
   font-size: 18px;
-  padding: 5px 0px 5px 7px;
+  padding: 5px 0px 5px 5px;
   width: 100%;
   height: 30px;
+  border: 1px solid #e93e5a;
 }
 
 #contact #contactHolder .mapform #forma1 #message {
@@ -557,12 +518,11 @@ header nav a.active {
 
 #contact #contactHolder .mapform #forma1 #btn {
   padding: 10px 20px;
-  background-color: #fff;
-  color: #e93e5a;
+  background-color: #e93e5a;
+  color: #fff;
   border: 1px solid #e93e5a;
 }
 
-/*footer*/
 footer {
   background-color: #e93e5a;
   padding: 15px 20px;
@@ -573,6 +533,8 @@ footer i {
   color: #fff;
   margin-left: 10px;
   float: right;
+  font-size: 18px;
+  margin-top: 2px;
 }
 
 footer i:hover {
@@ -587,3 +549,519 @@ footer .cleaner {
   clear: both;
 }
 /*# sourceMappingURL=style.css.map */
+
+/*responsive*/
+@media screen and (max-width: 1025px){
+  #education .box-container .box{
+   height: 340px;
+  }
+  #education .box-container .box p {
+   font-size: 15px;
+ }
+  .service .box-container .box h3 {
+   font-size: 18px;
+  }
+ 
+ .service .box-container .box p {
+   font-size: 16px;
+   padding: 25px 0px;
+  }
+  .service .box-container .box {
+   height: 320px;
+  }
+ }
+ @media screen and (max-width: 769px){
+  #logo h1{
+   font-size: 24px;
+   margin-top: 5px;
+  }
+  nav ul{
+   margin-top: 5px;
+  }
+  nav ul li:first-child{
+   margin-left: 0px;
+ }
+  nav ul li a{
+   font-size: 14px;
+  }
+  #cover{
+   height: 320px;
+  }
+  #cover .transparent-bg #cover-text h2{
+    font-size: 24px;
+  }
+  #cover .transparent-bg #cover-text h3{
+   font-size: 30px;
+  }
+  #cover .transparent-bg #cover-text a{
+   font-size: 14px;
+  }
+  #about-me .characteristics {
+   width: 450px;
+   height: 350px;
+ }
+ 
+ 
+ 
+ #about-me .characteristics img {
+   width: 230px;
+   margin-left: 60px;
+ }
+ #about-me ul {
+   margin-top: 20px;
+ }
+ 
+ #about-me ul li {
+   font-size: 16px;
+   margin-bottom: 10px;
+ }
+  #education h2{
+   font-size: 20px;
+  }
+  #education .box-container .box h3{
+   font-size: 16px;
+  }
+  #education .box-container .box p{
+   font-size: 14px;
+  }
+  #education .box-container .box i{
+   font-size: 22px;
+   height: 60px;
+   width: 60px;
+   top: -15px;
+   left: -32px;
+  }
+  #projects h2{
+   font-size: 24px;
+  }
+  #projects #holder{
+   width: 100%;
+  }
+  #projects #holder .site {
+   width: 40%;
+   height: 200px;
+  }
+  #projects #holder .site:hover .view{
+   width: 10%;
+   font-size: 12px;
+   margin-top: 30px;
+  }
+  .service .box-container .box{
+   text-align: left;
+  }
+  .service .box-container .box h3 {
+   font-size: 16px;
+  }
+ 
+ .service .box-container .box p {
+   font-size: 14px;
+   padding: 25px 0px;
+  }
+  #contact #contactHolder{
+   width: 70%;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+  }
+  #contact #contactHolder .mapform {
+   width: 100%;
+  }
+  
+  
+ 
+ }
+ 
+ @media screen and (max-width: 426px){
+  #logo{
+   width: 100%;
+   text-align: center;
+  }
+  nav{
+   width: 100%;
+   text-align: center;
+   margin-top: -20px;
+  }
+  nav ul{
+   justify-content: center;
+  }
+  nav ul li{
+   margin-left: 5px;
+  }
+  nav ul li a{
+   font-size: 13px;
+  }
+  #cover .transparent-bg #cover-text h2{
+   font-size: 20px;
+ }
+ #cover .transparent-bg #cover-text h3{
+  font-size: 26px;
+ }
+ #cover .transparent-bg #cover-text a{
+  font-size: 12px;
+ }
+  
+  #cover{
+   background-position: center;
+   height: 300px;
+  }
+  #about-me .characteristics h2{
+    font-size: 16px;
+    margin-top: 0px;
+  }
+  #about-me .characteristics {
+   width: 300px;
+   height: 280px;
+ }
+ #about-me ul li span:first-child {
+   width: 100px;
+ }
+ 
+ 
+ 
+ #about-me .characteristics img {
+   width: 150px;
+   margin-left: 5px;
+ }
+ #about-me ul {
+   margin-top: 10px;
+ }
+ 
+ #about-me ul li {
+   font-size: 14px;
+   margin-bottom: 10px;
+ }
+ #education .box-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   
+ }
+ #education .box-container .box{
+   width: 100%;
+   height: 250px;
+   border-left: none;
+ }
+ #education .box-container .box h3 {
+   font-size: 18px;
+ }
+ #education .box-container .box p{
+   font-size: 14px;
+ }
+  
+  .skill{
+   width: 100%;
+  }
+  .skill .skillNaslov h2 {
+   font-size: 20px;
+  }
+  #education .box-container{
+   width: 100%;
+  }
+  #education .box-container .box{
+   width: 80%;
+   margin: 2px;
+  }
+  #projects #holder{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   width: 80%;
+  }
+  #projects #holder .site {
+   width: 100%;
+   margin-bottom: 30px;
+  }
+  #projects p{
+   font-size: 12px;
+  }
+  .service .box-container{
+   width: 95%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ 
+  }
+  .service .box-container .box{
+   width: 100%;
+   height: 200px;
+   text-align: center;
+  }
+   
+  #contact #contactHolder{
+   width: 90%;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+  }
+  #contact #contactHolder .mapform {
+   width: 80%;
+  }
+  #contact h2{
+   font-size: 20px;
+  }
+  footer{
+    text-align: center;
+  }
+  footer p{
+    font-size: 14px;
+  }
+  footer i {
+   float: none;
+   margin-top: 4px;
+ }
+ }
+ @media screen and (max-width: 376px){
+  #logo h1{
+   font-size: 14px;
+  }
+  nav ul li{
+   margin-left: 4px;
+  }
+  nav ul li a{
+   font-size: 10px;
+  }
+  .progres-bar {
+   width: 80%;
+  }
+  #cover{
+   height: 250px;
+  }
+  #cover .transparent-bg #cover-text h2{
+   font-size: 16px;
+  }
+  #cover .transparent-bg #cover-text h3{
+   font-size: 18px;
+  }
+  #cover .transparent-bg #cover-text a{
+   font-size: 10px;
+   padding: 5px 12px;
+  }
+  #about-me .characteristics {
+   height: 250px;
+ }
+ #about-me ul li span:first-child {
+   width: 95px;
+ }
+ 
+ 
+ 
+ #about-me .characteristics img {
+   width: 150px;
+   
+ }
+ #about-me ul {
+   margin-top: 5px;
+ }
+ 
+ #about-me ul li {
+   font-size: 12px;
+ }
+ #education .box-container .box{
+   height: 200px;
+ }
+ #education .box-container .box i{
+   margin-left: 10px;
+   height: 60px;
+   width: 60px;
+   font-size: 24px;
+ }
+ #education .box-container .box span{
+   font-size: 14px;
+   padding: 10px 23px;
+ }
+ #education .box-container .box h3 {
+   font-size: 16px;
+ }
+ #education .box-container .box p{
+   font-size: 12px;
+ }
+  .section .sectionNaslov h2 {
+   font-size: 16px;
+  }
+  .skill p{
+   font-size: 12px;
+  }
+  .skill .progres-bar{
+   height: 10px;
+  }
+  .skill .progres-bar .devedesetpet, .skill .progres-bar .osamdeset, .skill .progres-bar .pedeset, .skill .progres-bar .cetrdeset, .skill .progres-bar .devedeset{
+   height: 10px;
+  }
+  #projects h2{
+   font-size: 16px;
+  }
+  #projects #holder .site .transparent .technology{
+   font-size: 16px;
+  }
+  #projects #holder .site:hover .view{
+   width: 10%;
+   font-size: 10px;
+   margin-top: 30px;
+ 
+  }
+  
+  .service h2{
+   font-size: 16px;
+  }
+  .service .box-container{
+   width: 100%;
+  }
+ 
+  .service .box-container .box{
+   height: 230px;
+  }
+  
+  .service .box-container .box h3 {
+   font-size: 18px;
+  }
+  .service .box-container .box p {
+   font-size: 14px;
+  }
+  .service .box-container .box i{
+   font-size: 16px;
+  }
+  #contact {
+   height: 550px;
+   }
+  #contact h2{
+   font-size: 18px;
+  }
+  #contact #contactHolder .mapform {
+   height: 150px;
+  }
+  #contact #contactHolder .mapform #forma1 {
+   width: 100%;
+ }
+ #contact #contactHolder .mapform #forma1 td {
+   padding: 10px;
+ }
+ #contact #contactHolder .mapform #forma1 #ime, #contact #contactHolder .mapform #forma1 #prezime, #contact #contactHolder .mapform #forma1 #meil, #contact #contactHolder .mapform #forma1 textarea {
+   font-size: 14px;
+   padding: 5px 0px 5px 5px;
+   height: 20px;
+ }
+ 
+ #contact #contactHolder .mapform #forma1 #btn {
+   padding: 8px 12px;
+   font-size: 12px;
+   
+ }
+ footer p{
+   font-size: 12px;
+ }
+ footer i{
+   font-size: 14px;
+ }
+ }
+ @media screen and (max-width: 321px){
+  nav ul{
+   flex-direction: column;
+  }
+  #cover{
+   height: 200px;
+  }
+  #cover .transparent-bg #cover-text h2{
+   font-size: 14px;
+  }
+  #cover .transparent-bg #cover-text h3{
+   font-size: 16px;
+  }
+  #cover .transparent-bg #cover-text a{
+   font-size: 8px;
+   padding: 4px 8px;
+  }
+  #about-me .characteristics {
+   height: 200px;
+ }
+ #about-me ul li span:first-child {
+   width: 75px;
+ }
+ #about-me .characteristics h2{
+   font-size: 12px;
+ }
+ #about-me .characteristics img {
+   width: 100px;
+ }
+ #education .box-container .box{
+   height: 220px;
+ }
+ #education .box-container .box i{
+   margin-left: 15px;
+   height: 50px;
+   width: 50px;
+   font-size: 20px;
+ }
+ #education .box-container .box span{
+   font-size: 12px;
+   padding: 8px 18px;
+ }
+ #education .box-container .box h3 {
+   font-size: 14px;
+ }
+ #education .box-container .box p{
+   font-size: 12px;
+ }
+  .section .sectionNaslov h2 {
+   font-size: 14px;
+  }
+  .skill {
+   padding: 5px 0px;
+  }
+  .skill p{
+   font-size: 10px;
+  }
+  .skill .progres-bar{
+   height: 10px;
+  }
+  .skill .progres-bar .devedesetpet, .skill .progres-bar .osamdeset, .skill .progres-bar .pedeset, .skill .progres-bar .cetrdeset, .skill .progres-bar .devedeset{
+   height: 10px;
+  }
+  #projects h2{
+   font-size: 14px;
+  }
+  #projects #holder .site .transparent .technology{
+   font-size: 12px;
+  }
+  #projects #holder .site {
+   width: 100%;
+   height: 150px;
+  }
+  #projects #holder .site:hover .view{
+   width: 10%;
+   font-size: 10px;
+   margin-top: 30px;
+  }
+  .service h2{
+   font-size: 16px;
+  }
+  .service .box-container .box{
+    height: 170px;
+    margin: 6px 10px;
+  }
+  .service .box-container .box h3 {
+   font-size: 14px;
+  }
+  .service .box-container .box p {
+   font-size: 12px;
+  }
+  .service .box-container .box i{
+   font-size: 16px;
+  }
+  #contact h2{
+   font-size: 14px;
+  }
+   #contact #contactHolder .mapform #forma1 #ime, #contact #contactHolder .mapform #forma1 #prezime, #contact #contactHolder .mapform #forma1 #meil, #contact #contactHolder .mapform #forma1 textarea {
+     font-size: 12px;
+     padding: 5px 0px 5px 5px;
+     height: 18px;
+   }
+   #contact #contactHolder .mapform #forma1 #btn {
+     padding: 6px 10px;
+     font-size: 10px;
+   }
+   footer i{
+     font-size: 12px;
+   }
+ }
+ 
